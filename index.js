@@ -52,7 +52,12 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  for(i=0; i<cart.length;i++) {
+    
+  }
+  if(cart != item){
+    
+  }
 }
 
 function placeOrder(cardNumber) {
