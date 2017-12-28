@@ -52,11 +52,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  for(i=0; i<cart.length;i++) {
-    if(item != indexOf(cart)){
-      return "That item is not in your cart";
-    }
-  }
+  Object.is(item, cart)? item.pop() : console.log("That item is not in your cart.");
 }
 
 function placeOrder(cardNumber) {
